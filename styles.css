@@ -22,6 +22,7 @@ body {
     height: 3vh;
     opacity: 80%;
     box-shadow: 0 5px 5px rgba(0, 0, 0 , 0.05);
+    cursor: pointer;
 
 }
 
@@ -81,7 +82,7 @@ h1 {
   hr {
     border: none; /* Remove the default border */
     height: 2px; /* Set the height of the line */
-    background-color: rgb(235, 122, 122); /* Set the background color */
+    background-color: #da8181; /* Set the background color */
     margin: 10px 0; /* Optional: Add some space around the line */
 }
 
@@ -108,7 +109,7 @@ h1 {
 
 .card-list .card-link .card-image {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    /* aspect-ratio: 16 / 9; */
     object-fit: cover;
     border-radius: 10px;
 }
@@ -146,4 +147,72 @@ h1 {
 
 h3 {
     font-family:"EB Garamond", serif ;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between; /* Ensures equal space between cards */
+    gap: 20px; /* Add spacing between the cards */
+    padding: 20px; /* Optional: Add padding inside the container */
+}
+
+.card-item {
+    flex: 1; /* Make the cards take up equal width */
+    max-width: 300px; /* Set a maximum width for the cards */
+    list-style: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margins from the list items */
+}
+
+.card-link {
+    display: block;
+    text-align: center; /* Center the content within the card */
+}
+
+.card-image {
+    width: 100%; /* Ensure image takes up full width of its parent */
+    height: auto; /* Maintain image aspect ratio */
+    object-fit: contain; /* This will make the whole image visible, avoiding cropping */
+    border-radius: 10px;
+}
+
+/* The modal itself (hidden by default) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top of everything */
+    left: 50%; /* Position from the left */
+    top: 50%; /* Position from the top */
+    width: 50%; /* Set desired width */
+    height: 50%; /* Set desired height */
+    transform: translate(-50%, -50%); /* Center the modal */
+    background-color: rgba(255, 255, 255, 0.9); /* Optional: semi-transparent background */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Optional: shadow for depth */
+}
+
+/* Modal content (the image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Max width for the image */
+    max-height: 80%; /* Max height for the image */
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #333; /* Change this to a more visible color */
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the close button is above the modal content */
+}
+
+.close:hover,
+.close:focus {
+    color: #f00; /* Change this to highlight on hover */
+    text-decoration: none;
+    cursor: pointer;
 }
