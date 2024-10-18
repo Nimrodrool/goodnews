@@ -26,8 +26,6 @@ window.onclick = function(event) {
     }
 }
 
-/
-Google Sheet
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxNZt7hwy2tP4NA3jbmMLmBfjtobDh9RMi8C1dJNhdj38Cp_ZMc5QnCAUjrK_K1Va5o/exec'
 ﻿
 const form = document.forms['contact-form']
