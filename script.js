@@ -26,7 +26,7 @@ window.onclick = function(event) {
     }
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz8dk1IJLWEl4rEB3vPvzjvYPuhDVT2F9oVR0PJLxJT_njLRiLgY4pz1PAQowVf5axu/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyjl26Diik-XmMnBnT6CgoWrmhwPb0cDbfDAB0MpYFo_d5t6XsFPSHOuHc100EzuotY/exec'
 ﻿
 const form = document.forms['contact-form']
 ﻿
